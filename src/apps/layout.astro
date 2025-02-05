@@ -1,0 +1,20 @@
+---
+import LeftSideBar from '../features/left-side-bar/index.astro';
+import '../styles/global.css';
+---
+
+<!doctype html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A program I made because I was bothered</title>
+  </head>
+
+  <body class="bg-black">
+    <main class="flex items-start justify-between">
+      <LeftSideBar />
+      <slot />
+    </main>
+  </body>
+</html>
